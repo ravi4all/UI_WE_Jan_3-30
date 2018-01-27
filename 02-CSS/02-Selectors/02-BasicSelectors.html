@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* DRY - Donot Repeat Yourself */
+        #div_1, #div_2 {
+            height: 250px;
+            background-color: lemonchiffon;
+        }
+        #div_1 .child_1 h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Selectors</h1>
+
+    <div id="div_1">
+        <h2>This is inside Div_1</h2>
+        <div class="child_1">
+            <h2>This is inside Child_1 of Div_1</h2>
+        </div>
+    </div>
+    <hr>
+    <div id="div_2">
+        <h2>This is inside Div_2</h2>
+        <div class="child_1">
+            <h2>This is inside Child_1 of Div_2</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

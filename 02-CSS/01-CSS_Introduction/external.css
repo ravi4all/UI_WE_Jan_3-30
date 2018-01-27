@@ -1,0 +1,13 @@
+/* 
+h2          - Selector
+{}          - Expression
+font-size   - Property
+20px        - Value 
+*/
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}

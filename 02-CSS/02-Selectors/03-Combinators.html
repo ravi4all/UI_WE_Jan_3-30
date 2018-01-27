@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent .parent_2 p {
+            color: red;
+        }
+        #parent > p {
+            color: blue;
+        }
+        #parent + h2 {
+            color: red;
+        }
+        #parent ~ h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <div id="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos reiciendis fuga omnis excepturi illum natus. Nam impedit ut commodi, ipsum sequi esse perferendis nisi obcaecati! Sapiente quidem odit accusamus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis suscipit cupiditate fugit quo facere eaque asperiores, beatae nostrum temporibus quam blanditiis odio tempore dolore deleniti. Quidem ipsum consequatur magnam.
+        </p>
+        <div class="parent_1">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias a non odio suscipit porro dolorem eum recusandae est doloremque! Autem quia distinctio temporibus, reiciendis quaerat pariatur? Animi doloremque odio tempora!
+            </p>
+            <div class="parent_2">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quisquam sapiente consequuntur iure maxime fugiat aspernatur odit iste, molestias quidem qui harum impedit laborum sequi sit soluta neque, earum accusantium!
+                </p>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo molestiae impedit recusandae cumque explicabo quod amet esse! Reprehenderit aperiam, esse eligendi veniam error id praesentium tempore maiores corrupti laboriosam vitae?
+        </p>
+    </div>
+    
+    <h2>This heading is outside parent_1</h2>
+    <h2>This heading is outside parent_1</h2>
+    <h2>This heading is outside parent_1</h2>
+    <h2>This heading is outside parent_1</h2>
+
+
+</body>
+</html>
