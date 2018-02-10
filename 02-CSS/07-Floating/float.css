@@ -1,0 +1,48 @@
+/* Pseudo Element - After and Before */
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#content div{
+    height: 400px;
+    border: 2px solid red;
+    float: left;
+}
+#sidebar_1 {
+    width: 25%;
+}
+#content #sidebar_2 {
+    width: 20%;
+    float: right;
+}
+#main {
+    width: 50%;
+    margin: 0px 10px;
+}
+
+#parent {
+    background-color: lightsteelblue;
+}
+.column_1 {
+    float: left;
+    width: 30%;
+    /* background-color: lightblue; */
+}
+
+.column_2 {
+    float: right;
+    width: 50%;
+    /* background-color: lightcoral; */
+}
+
+/* .clear {
+    clear: both;
+} */
+
+.div_1 {
+    /* clear: both; */
+    background-color: lightgreen;
+}
