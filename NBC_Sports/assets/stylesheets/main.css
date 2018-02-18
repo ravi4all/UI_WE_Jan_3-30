@@ -1,6 +1,7 @@
 /* Global Settings */
 body {
     margin: 0px;
+    background-color: #F8F8F8;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
     background-color: #181B1F;
 }
 
@@ -75,10 +79,119 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    height: 91%;
+    top: 9%;
+    border-top: 2px solid #FDB913;
+}
+.sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
 
 /* Sidebar_1 */
 #sidebar_1 {
-    position: fixed;
     width: 15%;
     left: 0px;
+    padding: 15px 0px;
+    background-color: #E6E6E6;
+}
+#sidebar_1 .sidebar_header {
+    text-align: center;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+#sidebar_1 h2 {
+    font-size: 20px;
+    margin: 0px;
+}
+#sidebar_1 .sidebar_header span {
+    font-size: 12px;
+}
+#sidebar_1 h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+#sidebar_1 h4 {
+    margin: 0px;
+    font-size: 14px;
+}
+#sidebar_1 .sidebar_content {
+    height: 100%;
+    overflow-y: scroll;
+}
+#sidebar_1 .live {
+    background-color: #CE1F41;
+    padding: 5px 0px 0px 4px;
+}
+#sidebar_1 .live a,#sidebar_1 .upcoming_events ul li {
+    display: block;
+    background-color: #E6E6E6;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+}
+#sidebar_1 .live a:hover, #sidebar_1 .upcoming_events ul li:hover {
+    background-color: #CDCDCD;
+}
+
+#sidebar_1 .upcoming_events {
+    background-color: #1F7EDF;
+    padding: 5px 0px 0px 4px;
+}
+
+#sidebar_2 {
+    width: 25%;
+    right: 0px;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+#sidebar_2 h2 {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+#sidebar_2 .sidebar_header {
+    padding: 0px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#sidebar_2 ul li:first-child, #sidebar_2 ul li:hover {
+    background-color: #E6E6E6;
+}
+#sidebar_2 ul li {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px;
+}
+#sidebar_2 ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+#sidebar_2 .text {
+    width: 40%;
+}
+#sidebar_2 .image {
+    width: 50%;
+}
+#sidebar_2 img {
+    width: 100%;
+}
+
+
+#main {
+    width: 50%;
+    margin: 100px 0% 0px 20%;
+}
+
+#section_1 img {
+    width: 100%;
 }
