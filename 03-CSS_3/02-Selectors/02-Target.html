@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #form {
+            display: none;
+        }
+        #form:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Target Selector</h1>
+
+    <a href="#form">Login</a>
+
+    <div id="form">
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Enter Name</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                    <td>
+                        <a href="#">close</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>

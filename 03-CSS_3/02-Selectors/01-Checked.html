@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+            width: 200px;
+            background-image: url(bulb.png);
+            background-size: 400px 300px;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+        }
+        input[value="show"]:checked ~ div {
+            background-position: -204px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Checked</h1>
+
+    <input type="radio" name="anim" value="show"> On
+    <input type="radio" name="anim" value="hide"> Off
+
+    <div></div>
+    
+</body>
+</html>
