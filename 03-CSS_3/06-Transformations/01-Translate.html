@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        img {
+            width: 20%;
+            position: absolute;
+            bottom: 0%;
+            transition-duration: 4s;
+            /* transition-timing-function: ease-in-out; */
+            transition-timing-function: linear;
+        }
+        div:hover img {
+            /* transform: translateX(600px); */
+            /* transform: translateY(200px); */
+            transform: translate(1300px, -800px);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Transform Translate</h1>
+
+    <div id="container">
+        <img src="../../images/blue-angels-web.png" alt="">
+    </div>
+
+    <h2>Hello this is a heading</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quidem est expedita ab nostrum repellat laborum similique dignissimos! Dolorem velit deserunt eveniet excepturi ullam sunt saepe a tempora vitae hic.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam labore voluptate praesentium, ab consectetur quas voluptates earum quo omnis necessitatibus ullam maiores ex neque temporibus explicabo molestiae blanditiis et! Quibusdam.
+    </p>
+
+</body>
+</html>

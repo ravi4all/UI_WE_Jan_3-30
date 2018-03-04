@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        img {
+            width: 20%;
+            position: absolute;
+            bottom: 0%;
+            /* left: 40%; */
+            transition-duration: 4s;
+            transition-timing-function: linear;
+            transform: rotateZ(20deg);
+        }
+        div:hover img {
+            /* transform: translate(1000px, -300px); */
+            /* transform: rotateX(-180deg); */
+            /* transform: rotateY(180deg); */
+            /* transform: rotateZ(36000deg); */
+            transform: translate(1000px, -300px) rotateZ(-10deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transform Rotate</h1>
+
+    <div id="container">
+        <img src="../../images/blue-angels-web.png" alt="">
+    </div>
+    
+</body>
+</html>
