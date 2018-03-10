@@ -1,0 +1,49 @@
+div {
+    border: 2px solid red;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+img {
+    width: 20%;
+    position: absolute;
+    bottom: 0%;
+    animation: anim_1 8s infinite linear;
+}
+
+/* div:hover img {
+    transform: translate(1000px, -300px) rotateZ(-10deg);
+} */
+
+/* @keyframes anim_1{
+    0% {
+        transform: rotateZ(20deg);
+    }
+    50% {
+        transform: translate(500px, -300px) rotateZ(-10deg);
+    }
+    55% {
+        transform: translate(500px, -300px) rotateZ(-3600deg);
+    }
+    60% {
+        transform: translate(500px, -300px) rotateZ(-10deg);
+    }
+    100% {
+        transform: translate(1000px, 0px) rotateZ(30deg);
+    }
+} */
+
+@keyframes anim_1{
+    0% {
+        transform: rotateZ(20deg);
+    }
+    50% {
+        transform: translate(1500px, -300px) rotateZ(-10deg);
+    }
+    55% {
+        transform: translate(1500px, -300px) rotateZ(-30deg) rotateY(180deg);
+    }
+    100% {
+        transform: translate(-500px, 0px) rotateZ(-30deg) rotateY(180deg);
+    }
+}
