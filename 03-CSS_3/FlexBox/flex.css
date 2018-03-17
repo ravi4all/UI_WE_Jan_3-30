@@ -1,0 +1,27 @@
+#parent {
+    border: 2px solid red;
+    padding: 10px;
+    display: flex;
+}
+
+#parent .col {
+    background-color: lightblue;
+    padding: 15px;
+    margin: 0px 15px;
+    border: 2px solid blue;
+}
+
+.col-1 {
+    /* width: 30%; */
+    flex: 1;
+}
+
+.col-2 {
+    /* width: 100%; */
+    flex: 3;
+}
+
+.col-3 {
+    /* width: 30%; */
+    flex: 1;
+}
