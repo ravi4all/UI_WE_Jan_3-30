@@ -1,0 +1,32 @@
+Bootstrap 4
+Responsive web framework
+
+LESS/SASS
+
+.SCSS => .SASS => CSS
+
+
+BreakPoints	Bs - 4		BS - 3
+> 1200px	col-xl-*	col-lg-*
+> 992px		col-lg-*	col-md-*
+> 768px		col-md-*	col-sm-*
+> 576px		col-sm-*
+< 576px		col-*
+< 768px				col-xs-*
+
+
+
+1. Improved Grid System
+2. Using em/rem rather than px
+3. Moved on SASS
+4. Using flexbox for grid
+
+
+
+
+
+
+
+
+
+

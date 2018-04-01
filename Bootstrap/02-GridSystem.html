@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .red, .green {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <h1>Grid System</h1>
+                    </div>
+                </div>
+                    <div class="col-md-6">
+                        <a href="#">Navigation_1</a>
+                        <a href="#">Navigation_2</a>
+                        <a href="#">Navigation_3</a>
+                        <a href="#">Navigation_4</a>
+                        <a href="#">Navigation_5</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- 1. There should be a container/container-fluid first.
+    2. Rows must be placed within containers.
+    3. There is pre defined class for row and columns.
+    4. Only Columns can be child of row.
+    5. Content will be placed inside columns only. -->
+
+    <div class="container">
+        <section id="section_1 ">
+            <div class="row">
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="green"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="green"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="green"></div>
+                </div>
+            </div>
+        </section>
+        <section id="section_2">
+            <div class="row">
+                <div class="col-4">
+                    <div class="red"></div>
+                </div>
+                <div class="col-8">
+                    <div class="green">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="red"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="red"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
