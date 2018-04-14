@@ -1,0 +1,32 @@
+Javascript
+Client Side Dynamic Scripting Language
+Server Side
+Node Js
+
+Programming - Compile -> Interpret
+Scripting -> Interpret
+
+Netscape
+w3c
+Nexus => Static
+Mosaic => Dynamic -> JS
+Mosaic + Killer = Mozilla
+
+Self/Scheme/Python/Java/
+
+Mocha => Livescript => Javascript => ECMAScript (ES)
+
+Microsoft => JScript
+
+V8Engine
+
+Features :-
+Loosely Typed / Weakly Typed
+Dynamically Typed
+Functions are first class object (citizens)
+Prototype Based
+Object
+
+window
+DOM
+BOM

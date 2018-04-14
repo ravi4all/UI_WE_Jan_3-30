@@ -1,0 +1,137 @@
+a = 10
+10
+b = 23
+23
+c = a + b
+33
+a - b
+-13
+a/b
+0.43478260869565216
+a*b
+230
+s = "Hello"
+"Hello"
+s + a
+"Hello10"
+s + a + b
+"Hello1023"
+a + b + s
+"33Hello"
+x = "10"
+"10"
+a + x
+"1010"
+a - x
+0
+a * x
+100
+a / b
+0.43478260869565216
+a / x
+1
+a + b
+33
+a + x
+"1010"
+a
+10
+b
+23
+x
+"10"
+a == x
+true
+a === x
+false
+typeof(a)
+"number"
+typeof(x)
+"string"
+typeof(b)
+"number"
+a = 10.5
+10.5
+typeof(a)
+"number"
+a = 1200000000
+1200000000
+typeof(a)
+"number"
+c = true
+true
+typeof(c)
+"boolean"
+a = "hello"
+"hello"
+a
+"hello"
+function addition(){
+	num_1 = 10;
+	num_2 = 12;
+	result = num_1 + num_2
+	console.log(result);
+}
+undefined
+addition()
+VM298:5 22
+undefined
+num_1 - num_2
+-2
+function addition(){
+	var f_num = 10;
+	var s_num = 12;
+	result = f_num + s_num;
+	console.log(result);
+}
+undefined
+addition()
+VM312:5 22
+undefined
+f_num
+VM320:1 Uncaught ReferenceError: f_num is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM320:1
+var x1 = 10
+undefined
+x2 = 10
+10
+function addition(){
+	var f_num = 10;
+	var s_num = 12;
+	result = f_num + s_num;
+	return result;
+}
+undefined
+addition()
+22
+x1
+10
+emp_id = [101,102,103,104,105]
+(5) [101, 102, 103, 104, 105]0: 1011: 1022: 1033: 1044: 105length: 5__proto__: Array(0)
+typeof(emp_id)
+"object"
+emp_id instanceof Array
+true
+typeof(Array)
+"function"
+Array instanceof Object
+true
+typeof(Object)
+"function"
+a
+"hello"
+typeof(a)
+"string"
+a instanceof String
+false
+a
+"hello"
+a1 = new String("hello")
+String {"hello"}0: "h"1: "e"2: "l"3: "l"4: "o"length: 5__proto__: Stringanchor: ƒ anchor()big: ƒ big()blink: ƒ blink()bold: ƒ bold()charAt: ƒ charAt()charCodeAt: ƒ charCodeAt()codePointAt: ƒ codePointAt()concat: ƒ concat()constructor: ƒ String()endsWith: ƒ endsWith()fixed: ƒ fixed()fontcolor: ƒ fontcolor()fontsize: ƒ fontsize()includes: ƒ includes()indexOf: ƒ indexOf()italics: ƒ italics()lastIndexOf: ƒ lastIndexOf()length: 0link: ƒ link()localeCompare: ƒ localeCompare()match: ƒ match()normalize: ƒ normalize()padEnd: ƒ padEnd()padStart: ƒ padStart()repeat: ƒ repeat()replace: ƒ replace()search: ƒ search()slice: ƒ slice()small: ƒ small()split: ƒ split()startsWith: ƒ startsWith()strike: ƒ strike()sub: ƒ sub()substr: ƒ substr()substring: ƒ substring()sup: ƒ sup()toLocaleLowerCase: ƒ toLocaleLowerCase()toLocaleUpperCase: ƒ toLocaleUpperCase()toLowerCase: ƒ toLowerCase()toString: ƒ toString()toUpperCase: ƒ toUpperCase()trim: ƒ trim()trimLeft: ƒ trimLeft()trimRight: ƒ trimRight()valueOf: ƒ valueOf()Symbol(Symbol.iterator): ƒ [Symbol.iterator]()__proto__: Object[[PrimitiveValue]]: ""[[PrimitiveValue]]: "hello"
+typeof(a1)
+"object"
+a1 instanceof String
+true
+a1 instanceof Object
+true
