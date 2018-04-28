@@ -1,0 +1,16 @@
+document.getElementById("div_1")
+<div id=​"div_1">​…​</div>​
+document.getElementsByClassName("hello")
+HTMLCollection [div.hello]
+document.getElementsByClassName("hello")
+HTMLCollection(2) [div.hello, div.hello]
+div = document.getElementById("div_1")
+<div id=​"div_1">​…​</div>​
+div.children
+HTMLCollection [div.hello]
+div.children[0]
+<div class=​"hello">​…​</div>​
+document.querySelector('#div_1 .hello')
+<div class=​"hello">​…​</div>​
+document.querySelector('#div_1 .hello h2')
+<h2>​This is a heading​</h2>​
