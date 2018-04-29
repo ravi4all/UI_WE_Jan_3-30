@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -14,6 +16,14 @@
     <audio id="audio" controls>
         <source src="">
     </audio>
+
+    <button id="play-btn">
+        <i class="fas fa-play"></i>
+    </button>
+    <button id="pause-btn">
+        <i class="fas fa-pause"></i>
+    </button>
+    <input type="range" value="0" id="slider">
     
     <h2>Songs List</h2>
     <ul id="songsList">
