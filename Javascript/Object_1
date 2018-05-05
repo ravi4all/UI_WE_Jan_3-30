@@ -1,0 +1,89 @@
+var obj = {
+	"id" : 101,
+	"name" : "Ram",
+	"age" : 29
+}
+undefined
+obj instanceof Object
+true
+typeof(Object)
+"function"
+var x = 10
+undefined
+typeof(x)
+"number"
+var x = "hello"
+undefined
+typeof(x)
+"string"
+var x = [1,2,3,4,5]
+undefined
+typeof(x)
+"object"
+var s = new String("hello")
+undefined
+var x = "hello"
+undefined
+s
+String {"hello"}
+x
+"hello"
+s == x
+true
+s === x
+false
+s instanceof String
+true
+s instanceof Object
+true
+String instanceof Object
+true
+typeof(Array)
+"function"
+function Emp(id,name,age){
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+undefined
+var obj = new Emp()
+undefined
+obj
+Emp {id: undefined, name: undefined, age: undefined}
+var obj_2 = new Emp(101,'Ram',30)
+undefined
+obj_2
+Emp {id: 101, name: "Ram", age: 30}
+obj_2.id
+101
+obj_2.id = 103
+103
+obj_2.salary = 12000
+12000
+obj_2
+Emp {id: 103, name: "Ram", age: 30, salary: 12000}age: 30id: 103name: "Ram"salary: 12000__proto__: Objectconstructor: ƒ Emp(id,name,age)__proto__: Object
+function Emp(id,name,age){
+	this.id = id;
+	this.name = name;
+	this.age = age;
+	this.company = "TCS"
+}
+undefined
+obj_2
+Emp {id: 103, name: "Ram", age: 30, salary: 12000}
+obj
+Emp {id: undefined, name: undefined, age: undefined}
+Emp.prototype.dept = "IT"
+"IT"
+obj
+Emp {id: undefined, name: undefined, age: undefined}
+obj_2
+Emp {id: 103, name: "Ram", age: 30, salary: 12000}
+obj_2 instanceof Emp
+false
+obj_2
+Emp {id: 103, name: "Ram", age: 30, salary: 12000}
+typeof(obj_2)
+"object"
+obj_2 instanceof Object
+true

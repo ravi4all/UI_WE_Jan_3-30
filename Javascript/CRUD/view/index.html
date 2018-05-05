@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <script src="../controller/controller.js"></script>
+  </head>
+  <body>
+    
+    <div class="container">
+        <h1 class="text-center">CRUD Application</h1>
+        <div class="row">
+            <div class="col-md-5">
+                <table>
+                    <tr>
+                        <td>Enter Product Name</td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="Enter Product Name" id="p_name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Product Price</td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="Enter Product Price" id="p_price">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Product Description</td>
+                        <td>
+                            <textarea placeholder="Enter Product Description" id="p_desc" class="form-control" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td> 
+                        <td>
+                            <button id="add" class="btn btn-primary">Add</button>
+                            <button id="delete" class="btn btn-danger">Delete</button>
+                            <button class="btn btn-warning">Update</button>
+                            <button class="btn btn-success">Save</button>
+                            <button class="btn btn-secondary">Load</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-7">
+                <ul id="itemList">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
