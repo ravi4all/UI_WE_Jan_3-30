@@ -16,6 +16,22 @@ function initEvents(){
 function addItem(){
     var ul = document.querySelector("#itemList");
     var li = document.createElement("li");
-    li.innerHTML = p_name.value + " " + p_price.value + " " + p_desc.value;
+    var cart_btn = document.createElement("button");
+    cart_btn.innerHTML = "Add to cart";
+
+    li.setAttribute('class','list-group-item');
+    cart_btn.className = 'btn btn-success';
+
+    obj.addItem(p_name.value,p_price.value,p_desc.value);
+
+    li.innerHTML = obj.id + " " + p_name.value + " " + p_price.value + " " + p_desc.value;
+    li.appendChild(cart_btn);
     ul.appendChild(li);
+    li.addEventListener("click", markItem);
+}
+
+function markItem(){
+    event.srcElement.classList.toggle("marked");
+    var current_id = event.srcElement.innerHTML.split(" ")[0];
+    obj.toggleItem(current_id);
 }

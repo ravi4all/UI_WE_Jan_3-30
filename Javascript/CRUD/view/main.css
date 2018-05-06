@@ -1,0 +1,17 @@
+button {
+    margin-bottom: 5px;
+}
+
+#itemList li {
+    cursor: pointer;
+    transition: 1s;
+}
+#itemList button {
+    margin-left: 30px;
+    min-width: 150px;
+}
+
+li.marked {
+    color: #fff;
+    background-color: red;
+}
