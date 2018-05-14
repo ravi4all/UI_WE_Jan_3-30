@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Slide Effect</h1>
+
+    <button id="hide">Slide Up</button>
+    <button id="show">Slide Down</button>
+    <button id="toggle">Slide Toggle</button>
+    <br><br>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo amet suscipit reprehenderit? Nesciunt adipisci nam, eos, officiis sequi reprehenderit quasi aperiam quaerat maiores obcaecati nemo non perferendis accusantium ratione cum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ipsa totam nam earum impedit aliquid labore. Neque asperiores eius minus laudantium ut tempora debitis deserunt, ex pariatur! Neque, perferendis voluptatibus?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ad aliquid dolore suscipit commodi eius similique, labore ab, placeat distinctio possimus nostrum accusantium aliquam eos nemo. Quod omnis soluta quo?
+        </p>
+    </div>
+    
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $("#hide").on("click", function(){
+            $("div").slideUp(1000);
+        });
+        $("#show").on("click", function(){
+            $("div").slideDown(1000);
+        });
+        $("#toggle").on("click", function(){
+            $("div").slideToggle(1000);
+        });
+    </script>
+</body>
+</html>
