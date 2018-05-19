@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            height: 500px;
+        }
+        .owl-carousel button.owl-dot span{
+            display: inline-block;
+            margin: 0px 5px;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: red !important;
+        }
+    </style>
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+</head>
+<body>
+
+    <div class="owl-carousel owl-theme">
+        <div> <img src="../../../images/WebImages/Terminator002.jpg" alt=""> </div>
+        <div> <img src="../../../images/WebImages/avengers-thor.jpg" alt=""> </div>
+        <div> <img src="../../../images/WebImages/batman_arkham_knight-1366x768.jpg" alt=""> </div>
+        <div> <img src="../../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg" alt=""> </div>
+        <div> <img src="../../../images/WebImages/Terminator002.jpg" alt=""> </div>
+        <div> <img src="../../../images/WebImages/avengers-thor.jpg" alt=""> </div>
+        <div> <img src="../../../images/WebImages/batman_arkham_knight-1366x768.jpg" alt=""> </div>
+        <div> <img src="../../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg" alt=""> </div>
+    </div>  
+
+    <script src="../../jquery-3.3.1.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                autoplay:true,
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:2,
+                        nav:true
+                    },
+                    1000:{
+                        items:1,
+                        nav:true,
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+</html>
