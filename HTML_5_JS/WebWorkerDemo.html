@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Big for loop</title>
+
+  <script>
+    var counter =0;
+    function sayHello(){
+      counter++;
+      document.getElementById("count").innerHTML=counter;
+      //alert("Hello Client...." );
+    }
+  </script>
+    <script>
+          
+      var worker = new Worker('js/workers.js');
+      worker.onmessage = function (event) {
+        alert("Completed " + event.data + " iterations" );
+      };
+
+
+  </script>
+</head>
+<body>
+Count is <span id="count"></span>
+   <input type="button" onclick="sayHello();" value="Say Hello"/>
+<!--<script src="../../js/workers.js"></script>-->
+</body>
+</html>
