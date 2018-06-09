@@ -1,0 +1,336 @@
+/* ==========================================================================
+	Global Settings
+========================================================================== */
+
+/*
+* Boxsizing set to border box http://css-tricks.com/box-sizing/
+*/
+
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+* Body settings, change it as required
+*/
+
+body { font-family: Arial, Helvetica, sans-serif; font-size: 1em; line-height: 1.4; }
+
+
+/*
+* Headings
+*/
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; font-weight:bold; text-rendering: optimizeLegibility; margin-top:0px; }
+
+
+/*
+* Paragraphs
+*/
+
+p { font-weight: normal; margin-top:0px; }
+
+
+/*
+* Links
+*/
+
+a { color: #2ba6cb; text-decoration: none; line-height: inherit; }
+a:hover { /*color: #2795b6;*/ }
+a:focus { color: #2ba6cb; outline: none; }
+p a, p a:visited { line-height: inherit; }
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+img {
+    vertical-align: middle; max-width: 100%; height: auto; -ms-interpolation-mode: bicubic;
+}
+
+/*
+* Lists
+*/
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset { border: 0; margin: 0; padding: 0; }
+
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+	Helper classes
+========================================================================== */
+
+/*
+* Floats
+*/
+
+.left { float: left; }
+
+.right { float: right; }
+
+
+/*
+* Text Alignment
+*/
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.text-center { text-align: center; }
+
+
+/*
+* Image Alignment
+*/
+
+img.alignleft { float:left; margin:0 10px 10px 0; display: inline;}
+
+img.alignright { float:right; margin:0 0px 10px 10px; display: inline;}
+
+img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bottom:10px;}
+
+
+/*
+* Image replacement
+*/
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*/
+
+/*
+* More semantic version as described in http://css-tricks.com/snippets/css/clear-fix/
+*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+* overflow method for clearing floats
+*/
+.floatbox { overflow:hidden; }
+
+/*
+* older method of adding empty tags for clearing
+*/
+.clear { clear: both; height:1px; line-height:1px; }
+
+
+/*
+* Chromeframe
+*/
+.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
+
+/*
+* Other
+*/
+
+
+/* ==========================================================================
+	Layout
+========================================================================== */
+
+
+/* Container ---------------------- */
+#container {  }
+
+.container {
+    max-width: 1200px;
+}
+
+/* Header ---------------------- */
+#header { 
+    padding: 20px 0px;
+ }
+#header h1 {
+    font-size: 38px;
+    font-weight: normal;
+}
+#header .logo h1 span {
+    color: #FF5722;
+}
+#header .logo a {
+    color: #000;
+    font-style: italic;
+}
+#header .logo img {
+    width: 20%;
+}
+
+#secondary-nav {
+    margin-bottom: 15px;
+}
+#secondary-nav ul li {
+    display: inline-block;
+    border-right: 1px solid #e1e1e1;
+    padding: 8px 20px;
+}
+#secondary-nav ul li a {
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+#secondary-nav ul li a i {
+    color: #FF5722;
+    margin-right: 10px;
+}
+
+#search .search-form {
+    position: relative;
+}
+#search .search-form input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding: 0px 5px;
+    border: 1px solid #000;
+}
+#search .search-form button {
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    height: 40px;
+    min-width: 60px;
+    background-color: #1ACCFD;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#search .cart span{
+    display: inline-block;
+    background-color: #FF5722;
+    color: #fff;
+    height: 40px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0px 0px;
+}
+
+/* Banner ---------------------- */
+#banner{ }
+
+/* Main Navigation ---------------------- */
+#main-navigation{ }
+
+/* Content ---------------------- */
+#content {  }
+
+/* Main ---------------------- */
+#main {  }
+
+/* Sidebar ---------------------- */
+#sidebar { }
+
+/* Footer ---------------------- */
+#footer { }
+
+
+/* ==========================================================================
+	Common Functionalities & UI Elements
+========================================================================== */
+
